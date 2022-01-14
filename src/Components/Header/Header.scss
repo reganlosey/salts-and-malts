@@ -1,0 +1,10 @@
+
+.header{
+  border: 2px solid darkgreen;
+  display: flex;
+  height: 6em;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
