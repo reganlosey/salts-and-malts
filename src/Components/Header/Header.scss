@@ -1,10 +1,19 @@
 
 .header{
   border: 2px solid darkgreen;
+  color: white;
   display: flex;
   height: 6em;
   flex-wrap: nowrap;
   align-content: flex-end;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.site-name {
+  font-size: 3em;
+}
+.tagline {
+  font-size: 1.5em;
+  margin-left: 3em;
 }
