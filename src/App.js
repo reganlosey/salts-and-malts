@@ -26,7 +26,7 @@ const App = () => {
 
   const filteredTypes = (type) => {
     const beerList = data.filter((beer) => {
-      if(beer.name.toLowerCase().includes(type) || beer.tagline.toLowerCase().includes(type)) {
+      if (beer.name.toLowerCase().includes(type) || beer.tagline.toLowerCase().includes(type)) {
         return beer
       }
     })
@@ -34,21 +34,24 @@ const App = () => {
   }
 
   return (
-    <div className="App">
-    <Header />
-    <section className="homepage">
-      <div className="filter-container">
-        <p className="start-text">let's get started</p>
-        <div className="filter-links">
-        <p>find beers by the food they pair with
-        <Link to={`/beers`}/>
-        </p>
-        <article>
-        </article>
-        </div>
-      </div>
-    </section>
-    </div>
+    <main className="App">
+      <Header />
+      <Routes>
+        <Route path='/' element={
+          <section className="homepage">
+            <div className="filter-container">
+              <p className="start-text">let's get started</p>
+              <div className="filter-links">
+                <p>find beers by the food they pair with
+                </p>
+                <Link to={'/beers'}> Thing</Link>
+              </div>
+            </div>
+          </section>
+        }
+        />
+      </Routes>
+    </main>
   )
 }
 

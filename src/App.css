@@ -14,7 +14,7 @@ body {
 
 .homepage {
   border: 2px solid blue;
-  height: 100vh;
+  height: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
