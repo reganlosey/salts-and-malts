@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
+*{
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Didact Gothic', sans-serif;
-  height: 100vh;
+  font-family: "Didact Gothic", sans-serif;
   background-color: #000000;
   color: white;
+  border: 1px solid magenta;
+  height: 100vh;
+}
+
+.App{
+  height:100vh;
 }

@@ -1,0 +1,20 @@
+.homepage {
+  border: 2px solid blue;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-container {
+  border: 3px solid purple;
+  width: 75vw;
+  height: 85%;
+}
+/*# sourceMappingURL=Homepage.css.map */

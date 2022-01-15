@@ -2,11 +2,13 @@ import React, {useEffect,useState } from 'react';
 import './Homepage.scss'
 
 
-
-
 const Homepage = () => {
   return (
-    <h1>Homepage!</h1>
+    <div className="homepage">
+      <div className="filter-container">
+        let's get started
+      </div>
+    </div>
   )
 
 }
