@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect, Fragment } from 'react'
+import { BrowserRouter } from 'react-router-dom';
+import Homepage from './Components/Homepage/Homepage'
+import Header from './Components/Header/Header'
+import './App.scss';
 
-function App() {
+const App = () => {
+  const [data, setData] = useState([]);
+  const [error, setError] = useState([])
+
+  const fetchAllBeers = async () => {
+    try {
+      const res = await fetch('https://api.punkapi.com/v2/beers')
+      const resJson = await res.json()
+      // console.log(resJson)
+      setData(resJson)
+    } catch (error) {
+      setError(error)
+    }
+  }
+
+  useEffect(() => {
+    fetchAllBeers()
+  }, [])
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Homepage beerData={data} />
     </div>
-  );
+  )
 }
 
 export default App;

@@ -1,0 +1,29 @@
+.header {
+  border: 2px solid darkgreen;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.site-name {
+  font-size: 3em;
+}
+
+.tagline {
+  font-size: 1.5em;
+  margin-left: 3em;
+}
+/*# sourceMappingURL=Header.css.map */
