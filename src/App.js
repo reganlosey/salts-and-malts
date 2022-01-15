@@ -44,12 +44,18 @@ const App = () => {
               <div className="filter-links">
                 <p>find beers by the food they pair with
                 </p>
-                <Link to={'/beers'}> Thing</Link>
+                <Link to={'/beers'}>Lager</Link>
+                <Link to={'/beers'}>Pilsner</Link>
+                <Link to={'/beers'}>IPA</Link>
+                <Link to={'/beers'}>Saison</Link>
+                <Link to={'/beers'}>Blonde</Link>
+                <Link to={'/beers'}>Ale</Link>
               </div>
             </div>
           </section>
         }
         />
+        <Route path={'/beers'} element={<MatchedBeers />}/>
       </Routes>
     </main>
   )

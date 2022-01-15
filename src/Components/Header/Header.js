@@ -1,11 +1,12 @@
 import React, {useEffect,useState } from 'react';
+import {Link, NavLink} from 'react-router-dom'
 import './Header.scss'
 
 const Header = () => {
 
   return (
     <header className="header">
-      <h1 className="site-name">salts and malts</h1>
+      <Link to={'/'} className="site-name">salts and malts</Link>
       <p className="tagline">a beer-food pairing app that rises in the yeast and sets in the waist</p>
     </header>
   )
