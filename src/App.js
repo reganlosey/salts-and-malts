@@ -5,26 +5,30 @@ import Header from './Components/Header/Header'
 import './App.scss';
 
 const App = () => {
-  const [data, setData] = useState([])
+  const [data, setData] = useState([]);
+  const [error, setError] = useState([])
 
-    const fetchAllBeers = async (url) => {
-      try {
-        const res = await fetch('https://api.punkapi.com/v2/beers')
-        const resJson = await res.json()
-        console.log(resJson)
-        setData(resJson)
-      } catch (err) {
-        console.log(err)
-      }
+  const fetchAllBeers = async () => {
+    try {
+      const res = await fetch('https://api.punkapi.com/v2/beers')
+      const resJson = await res.json()
+      // console.log(resJson)
+      setData(resJson)
+    } catch (error) {
+      setError(error)
     }
+  }
 
-    // fetchAllBeers()
+  useEffect(() => {
+    fetchAllBeers()
+  }, [])
+
 
 
   return (
     <div className="App">
       <Header />
-      <Homepage />
+      <Homepage beerData={data} />
     </div>
   )
 }
