@@ -12,6 +12,33 @@ body {
   height: 100vh;
 }
 
+
+.homepage{
+  border: 2px solid blue;
+  height: 100vh;
+  display:flex; 
+  justify-content: center;
+  align-items:center;
+}
+
+.filter-container{
+  border: 3px solid purple;
+  width: 75vw;
+  height: 85%;
+}
+
+.start-text{
+  font-size: 2em;
+  text-align: center;
+}
+
+.filter-links{
+  border: 2px solid white;
+  height: 90%;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .App{
   height:100vh;
 }
