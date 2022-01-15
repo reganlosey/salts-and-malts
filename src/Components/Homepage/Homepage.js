@@ -1,4 +1,5 @@
 import React, {useEffect,useState } from 'react';
+import {Link, NavLink} from 'react-router-dom'
 import './Homepage.scss'
 
 
@@ -13,15 +14,14 @@ const Homepage = ( {beerData} ) => {
   }
 
   return (
-    <div className="homepage">
+    <section className="homepage">
       <div className="filter-container">
         <p className="start-text">let's get started</p>
         <div className="filter-links">
         <p>find beers by the food they pair with</p>
-
         </div>
       </div>
-    </div>
+    </section>
   )
 
 }

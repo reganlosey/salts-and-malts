@@ -1,8 +1,9 @@
 import React, { useState, useEffect, Fragment } from 'react'
-import { BrowserRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Homepage from './Components/Homepage/Homepage'
 import Header from './Components/Header/Header'
 import './App.scss';
+import MatchedBeers from './Components/MatchedBeers/MatchedBeers';
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -28,7 +29,10 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <Homepage beerData={data} />
+      <Routes>
+        <Route path='/' element={<Homepage beerData={data}/>} />
+        <Route path='/beers/type' element={<MatchedBeers/>}/>
+      </Routes>
     </div>
   )
 }
