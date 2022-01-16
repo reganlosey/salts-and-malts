@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink, useParams } from 'react-router-dom'
-import Card from '../Card/Card'
-import './Homepage.scss'
+import Card from '../Card/Card';
+import './Homepage.scss';
 
 
 const Homepage = ({ beerData }) => {
-  // const newId = useParams().beerId
-  // console.log(newId)
   const beerNames = beerData.map((beer) => {
     return (
-  <Card 
+  <Card
   key={beer.id}
   id={beer.id}
   name={beer.name}
@@ -21,7 +19,7 @@ const Homepage = ({ beerData }) => {
   })
 
   return (
-    <section>
+    <section className="homepage-grid">
       {beerNames}
     </section>
   )
