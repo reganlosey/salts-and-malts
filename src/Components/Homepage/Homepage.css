@@ -1,15 +1,19 @@
-.homepage {
+.homepage-grid {
   border: 2px solid blue;
-  height: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(215px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  grid-gap: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .filter-container {

@@ -4,22 +4,29 @@ import './SingleBeer.scss'
 
 const SingleBeer = ({ beerData }) => {
   console.log(beerData)
-  const [singleData, setSingleData] = useState([]);
+  const [singleData, setSingleData] = useState('');
   let currentId = useParams().beerId
 
   const getSingleBeer = () => {
     const currentBeer = beerData.find((beer) => {
       return beer.id === parseInt(currentId)
     })
-    setSingleData(currentBeer)
+    return currentBeer
   }
 
-  useEffect(() => {
-    getSingleBeer()
-    return () => {
-      setSingleData({
-      })
+  const fetchSingleBeer = async (url) => {
+    try {
+      const res = await fetch(url)
+      const resJson = await res.json()
+      setSingleData(resJson)
+      console.log(singleData)
+    } catch (error) {
+      console.log(error)
     }
+  }
+  useEffect(() => {
+    fetchSingleBeer(`https://api.punkapi.com/v2/beers/${currentId}`)
+    getSingleBeer()
   }, [])
 
 

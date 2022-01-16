@@ -1,23 +1,26 @@
-.homepage{
+.homepage-grid {
   border: 2px solid blue;
-  height: 85%;
-  display:flex; 
-  justify-content: center;
-  align-items:center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  grid-gap: 20px;
+  align-items: start;
+  justify-content:center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.filter-container{
+.filter-container {
   border: 3px solid purple;
   width: 75vw;
   height: 85%;
 }
 
-.start-text{
+.start-text {
   font-size: 2em;
   text-align: center;
 }
 
-.filter-links{
+.filter-links {
   border: 2px solid white;
   height: 90%;
   width: 90%;
