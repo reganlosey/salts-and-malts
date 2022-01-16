@@ -1,32 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom'
+import { useParams, useLocation } from 'react-router-dom'
 import './SingleBeer.scss'
 
-const SingleBeer = ({ beerData }) => {
-  console.log(beerData)
-  const [singleData, setSingleData] = useState('');
-  let currentId = useParams().beerId
+const SingleBeer = () => {
+  const [singleData, setSingleData] = useState([]);
+  let beerId = useLocation().pathname
+  // console.log(beerId)
 
-  const getSingleBeer = () => {
-    const currentBeer = beerData.find((beer) => {
-      return beer.id === parseInt(currentId)
-    })
-    return currentBeer
-  }
+  // const getSingleBeer = () => {
+  //   const currentBeer = beerData.find((beer) => {
+  //     return beer.id === parseInt(beerId)
+  //   })
+  //   return currentBeer
+  // }
 
-  const fetchSingleBeer = async (url) => {
-    try {
-      const res = await fetch(url)
-      const resJson = await res.json()
-      setSingleData(resJson)
-      console.log(singleData)
-    } catch (error) {
-      console.log(error)
-    }
-  }
+  console.log(singleData)
+  
   useEffect(() => {
-    fetchSingleBeer(`https://api.punkapi.com/v2/beers/${currentId}`)
-    getSingleBeer()
+    const fetchSingleBeer = async (url) => {
+        const res = await fetch(url)
+        const resJson = await res.json()
+        
+        setSingleData(resJson[0])
+    }
+    fetchSingleBeer(`https://api.punkapi.com/v2/beers${beerId}`)
   }, [])
 
 
@@ -34,7 +31,11 @@ const SingleBeer = ({ beerData }) => {
   return (
     <section className="single-beer">
       <div className="beer-info">
-        <p>{`${singleData.name}`}</p>
+        <p className="beer-name">{singleData.name}</p>
+        <p className="abv">{singleData.abv}</p>
+        <p className="ibu">{singleData.ibu}</p>
+        <p className="food-pairing">{singleData.food_pairing}</p>
+        
 
       </div>
 
