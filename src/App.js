@@ -1,35 +1,36 @@
 import React, { useState, useEffect, Fragment } from 'react'
-import { BrowserRouter } from 'react-router-dom';
-import Homepage from './Components/Homepage/Homepage'
-import Header from './Components/Header/Header'
+import { Link, Route, Routes } from 'react-router-dom';
+import Header from './Components/Header/Header';
 import './App.scss';
+import MatchedBeers from './Components/MatchedBeers/MatchedBeers';
+import Homepage from './Components/Homepage/Homepage';
+import SingleBeer from './Components/SingleBeer/SingleBeer';
 
 const App = () => {
   const [data, setData] = useState([]);
-  const [error, setError] = useState([])
+  const [error, setError] = useState([]);
 
-  const fetchAllBeers = async () => {
+  const fetchAllBeers = async (url) => {
     try {
-      const res = await fetch('https://api.punkapi.com/v2/beers')
+      const res = await fetch(url)
       const resJson = await res.json()
-      // console.log(resJson)
       setData(resJson)
     } catch (error) {
       setError(error)
     }
   }
-
   useEffect(() => {
-    fetchAllBeers()
+    fetchAllBeers('https://api.punkapi.com/v2/beers')
   }, [])
 
-
-
   return (
-    <div className="App">
+    <main className="App">
       <Header />
-      <Homepage beerData={data} />
-    </div>
+      <Routes>
+        <Route path='/' element={<Homepage beerData={data}/>} />
+        <Route path="/:beerId" element={<SingleBeer beerData={data} />}/>
+      </Routes>
+    </main>
   )
 }
 
