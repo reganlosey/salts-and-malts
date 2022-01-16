@@ -26,3 +26,14 @@
   width: 90%;
   margin: 0 auto;
 }
+
+.button-container{
+  border: 1px solid magenta;
+  height: 8em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
