@@ -10,6 +10,7 @@ const Homepage = ({ beerData }) => {
   const beerNames = beerData.map((beer) => {
     return (
   <Card 
+  key={beer.id}
   id={beer.id}
   name={beer.name}
   abv={beer.abv}
