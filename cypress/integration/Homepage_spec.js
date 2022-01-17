@@ -57,7 +57,15 @@ describe('Homepage', () => {
     .get('.reset')
     .should('have.attr', 'name', 'allBeers')
     .contains('all beers')
+  })
 
+  it('should be able to sort the beer cards according to button name', () => {
+    cy.get('.button-container')
+    .get('.lager')
+    .click()
+    .get('.homepage-grid')
+    .get('.beer-card > :nth-child(1)')
+    .contains('Pilsen Lager')
   })
 
 
