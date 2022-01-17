@@ -1,5 +1,5 @@
+import PropTypes from 'prop-types';
 import React, { useEffect, useState } from 'react';
-import { Link, NavLink, useParams } from 'react-router-dom'
 import Card from '../Card/Card';
 import './Homepage.scss';
 
@@ -69,20 +69,10 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
   )
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export default Homepage
+
+Homepage.propTypes = {
+  beerData: PropTypes.array,
+  filteredData: PropTypes.array,
+  sortBeer: PropTypes.func
+}
