@@ -59,7 +59,7 @@ describe('Homepage', () => {
     .contains('all beers')
   })
 
-  it('should be able to sort the beer cards according to button name', () => {
+  it('should sort the beer cards according to button name', () => {
     cy.get('.button-container')
     .get('.lager')
     .click()
@@ -68,5 +68,17 @@ describe('Homepage', () => {
     .contains('Pilsen Lager')
   })
 
+  it('should display all cards on click of all beers button', () => {
+    cy.get('.button-container')
+    .get('.reset')
+    .click()
+    .get('.homepage-grid')
+    .get('.beer-card > :nth-child(1)')
+    .contains('Buzz')
+    .get('.homepage-grid')
+    .get(':nth-child(2)')
+    .contains('Trashy Blonde')
+
+  })
 
 })
