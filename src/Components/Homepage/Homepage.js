@@ -83,25 +83,23 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
   useEffect(() => {
     filteredRender()
   }, [filteredData])
-  
+
   const resetCards = () => {
     initialRender()
   }
   return (
+    <main>
+    <div className="button-container">
+      <button name="lager" onClick={(e) => sortBeer(e)}>lagers</button>
+      <button name="ale" onClick={(e) => sortBeer(e)}>ales</button>
+      <button name="ipa" onClick={(e) => sortBeer(e)}>ipas</button>
+      <button name="saison" onClick={(e) => sortBeer(e)}>saisons</button>
+      <button name="allBeers" onClick={resetCards}>reset</button>
+    </div>
     <section className="homepage-grid">
-      <div className="button-container">
-        <button name="lager" onClick={(e) => sortBeer(e)}>lagers</button>
-        <button name="ale" onClick={(e) => sortBeer(e)}>ales</button>
-        <button name="ipa" onClick={(e) => sortBeer(e)}>ipas</button>
-        <button name="saison" onClick={(e) => sortBeer(e)}>saisons</button>
-        <button name="allBeers" onClick={resetCards}>reset</button>
-
-      </div>
       {cardData}
-      <div className="search-bar">
-
-      </div>
     </section>
+    </main>
   )
 }
 
