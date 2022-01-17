@@ -1,15 +1,22 @@
 .beer-card{
   border: 1px solid white;
   display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  height: 60px;
+  flex-direction: row;
   font-size: 1.5em;
   flex-wrap: wrap;
-  align-content: space-around;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
+.info-container{
+  border: 1px solid magenta;
+
+}
 .info-link{
   color: #ff8c2e;
+}
+.beer-icon{
+  height: 1em;
 }

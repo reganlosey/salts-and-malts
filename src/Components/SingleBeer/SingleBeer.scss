@@ -1,0 +1,33 @@
+.single-beer-container {
+  border: 1px solid orange;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.beer-info {
+  border: 1px solid blue;
+  height: 100%;
+  width: 45vw;
+
+  .pairings {
+    border: 2px steelblue;
+
+  }
+}
+    .beer-name {
+      width: 45vw;
+    }
+
+    .name {
+      border: 1px solid white;
+      font-size: 3em;
+
+    }
+
+    .beer-mug {
+      height: 100px;
+      width: 85px;
+    }
