@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import PropTypes from 'prop-types'
 import './Card.scss'
 // import '../../../public/pint-of-beer.svg'
 
@@ -28,6 +29,11 @@ const Card = ({ id, name, abv, ibu }) => {
 
 }
 
-
-
 export default Card
+
+Card.propTypes = {
+  id :PropTypes.number.isRequired,
+  name :PropTypes.string,
+  abv :PropTypes.number,
+  ibu :PropTypes.number,
+};
