@@ -40,5 +40,16 @@ describe('Homepage', () => {
     .should('have.attr', 'href', '/1')
   })
 
+  it('should have button with beer type labels', () => {
+    cy.get('.button-container')
+    .get('.lager')
+    .should('have.attr', 'name', 'lager')
+    .contains('lagers')
+    .get('.ale')
+    .should('have.attr', 'name', 'ale')
+    .contains('ales')
+
+  })
+
 
 })

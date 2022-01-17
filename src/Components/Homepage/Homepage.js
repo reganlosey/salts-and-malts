@@ -56,11 +56,11 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
     <main>
       <div className="button-container">
         sort by beer type
-        <button name="lager" onClick={(e) => sortBeer(e)}>lagers</button>
-        <button name="ale" onClick={(e) => sortBeer(e)}>ales</button>
-        <button name="ipa" onClick={(e) => sortBeer(e)}>ipas</button>
-        <button name="saison" onClick={(e) => sortBeer(e)}>saisons</button>
-        <button name="allBeers" onClick={resetCards}>all beers</button>
+        <button className="lager" name="lager" onClick={(e) => sortBeer(e)}>lagers</button>
+        <button className="ale" name="ale" onClick={(e) => sortBeer(e)}>ales</button>
+        <button className="ipa" name="ipa" onClick={(e) => sortBeer(e)}>ipas</button>
+        <button className="saisons" name="saison" onClick={(e) => sortBeer(e)}>saisons</button>
+        <button className="reset" name="allBeers" onClick={resetCards}>all beers</button>
       </div>
       <section className="homepage-grid">
         {cardData}
