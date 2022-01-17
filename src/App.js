@@ -2,7 +2,6 @@ import React, { useState, useEffect, Fragment } from 'react'
 import { Link, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import './App.scss';
-import MatchedBeers from './Components/MatchedBeers/MatchedBeers';
 import Homepage from './Components/Homepage/Homepage';
 import SingleBeer from './Components/SingleBeer/SingleBeer';
 

@@ -6,7 +6,7 @@ import './Homepage.scss';
 
 const Homepage = ({ beerData, filteredData, sortBeer }) => {
   const [cardData, setCardData] = useState([])
- 
+
 
   // const renderCards = () => {
   //   if (!filteredData.length) {
@@ -43,38 +43,38 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
   // }
 
   const initialRender = () => {
-      const beerCards = beerData.map((beer) => {
-        return (
-          <Card
-            key={beer.id}
-            id={beer.id}
-            name={beer.name}
-            abv={beer.abv}
-            ibu={beer.ibu}
-            tagline={beer.tagline}
-            description={beer.description}
-            foodPairing={beer.food_Pairing} />
-        )
-      })
-      setCardData(beerCards)
-    }
+    const beerCards = beerData.map((beer) => {
+      return (
+        <Card
+          key={beer.id}
+          id={beer.id}
+          name={beer.name}
+          abv={beer.abv}
+          ibu={beer.ibu}
+          tagline={beer.tagline}
+          description={beer.description}
+          foodPairing={beer.food_Pairing} />
+      )
+    })
+    setCardData(beerCards)
+  }
 
   const filteredRender = () => {
     const beerCards = filteredData.map((beer) => {
       return (
         <Card
-        key={beer.id}
-        id={beer.id}
-        name={beer.name}
-        abv={beer.abv}
-        ibu={beer.ibu}
-        tagline={beer.tagline}
-        description={beer.description}
-        foodPairing={beer.food_Pairing} />
-        )
-      })
-      setCardData(beerCards)
-    }
+          key={beer.id}
+          id={beer.id}
+          name={beer.name}
+          abv={beer.abv}
+          ibu={beer.ibu}
+          tagline={beer.tagline}
+          description={beer.description}
+          foodPairing={beer.food_Pairing} />
+      )
+    })
+    setCardData(beerCards)
+  }
 
   useEffect(() => {
     initialRender()
@@ -83,8 +83,10 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
   useEffect(() => {
     filteredRender()
   }, [filteredData])
-
-
+  
+  const resetCards = () => {
+    initialRender()
+  }
   return (
     <section className="homepage-grid">
       <div className="button-container">
@@ -92,6 +94,8 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
         <button name="ale" onClick={(e) => sortBeer(e)}>ales</button>
         <button name="ipa" onClick={(e) => sortBeer(e)}>ipas</button>
         <button name="saison" onClick={(e) => sortBeer(e)}>saisons</button>
+        <button name="allBeers" onClick={resetCards}>reset</button>
+
       </div>
       {cardData}
       <div className="search-bar">
