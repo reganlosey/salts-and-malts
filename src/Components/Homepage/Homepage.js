@@ -14,13 +14,17 @@ const Homepage = ({ beerData }) => {
   abv={beer.abv}
   ibu={beer.ibu}
   tagline={beer.tagline}
-  description={beer.description} />
+  description={beer.description}
+  foodPairing={beer.food_Pairing} />
     )
   })
 
   return (
     <section className="homepage-grid">
       {beerNames}
+      <div className="search-bar">
+        
+      </div>
     </section>
   )
   // return (
