@@ -90,6 +90,7 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
   return (
     <main>
     <div className="button-container">
+      sort by beer type
       <button name="lager" onClick={(e) => sortBeer(e)}>lagers</button>
       <button name="ale" onClick={(e) => sortBeer(e)}>ales</button>
       <button name="ipa" onClick={(e) => sortBeer(e)}>ipas</button>
