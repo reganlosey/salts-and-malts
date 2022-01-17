@@ -19,21 +19,22 @@ const App = () => {
       setError(error)
     }
   }
+
   useEffect(() => {
     fetchAllBeers('https://api.punkapi.com/v2/beers')
   }, [])
 
   const sortBeer = (e) => {
-    console.log('ahahah')
     const filteredCards = data.filter((beer) => {
       return beer.name.toLowerCase().includes(e.target.name) || beer.tagline.toLowerCase().includes(e.target.name)
     })
     setFilteredData(filteredCards)
   }
 
+
   return (
     <main className="App">
-      <Header />
+      <Header refreshData={fetchAllBeers}/>
       <Routes>
         <Route path='/' element={<Homepage beerData={data} filteredData={filteredData} sortBeer={sortBeer} />} />
         <Route path="/:beerId" element={<SingleBeer beerData={data} />} />

@@ -25,13 +25,14 @@ const SingleBeer = () => {
       <div className="beer-name">
         <p className="name">{singleData.name}</p>
         <p className="tagline">{singleData.tagline}</p>
+        <p className="description">{singleData.description}</p>
         <img className="beer-mug" src="https://www.svgrepo.com/show/227376/beer.svg" alt="mug-of-beer"/>
       </div>
       <div className="beer-info">
-        about this brew
-        <p className="abv">abv: {singleData.abv}</p>
-        <p className="ibu">ibu: {singleData.ibu}</p>
-        pairs well with:
+        About this brew
+        <p className="abv">ABV: {singleData.abv}</p>
+        <p className="ibu">IBU: {singleData.ibu}</p>
+        Pairs well with:
         <div className="pairings">
         <p>{foodData[0]}</p>
         <p>{foodData[1]}</p>

@@ -52,15 +52,16 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
   const resetCards = () => {
     initialRender()
   }
+
   return (
     <main>
       <div className="button-container">
-        sort by beer type
-        <button className="lager" name="lager" onClick={(e) => sortBeer(e)}>lagers</button>
-        <button className="ale" name="ale" onClick={(e) => sortBeer(e)}>ales</button>
-        <button className="ipa" name="ipa" onClick={(e) => sortBeer(e)}>ipas</button>
-        <button className="saisons" name="saison" onClick={(e) => sortBeer(e)}>saisons</button>
-        <button className="reset" name="allBeers" onClick={resetCards}>all beers</button>
+        {/* Sort by beer type */}
+        <button className="lager" name="lager" onClick={(e) => sortBeer(e)}>Lagers</button>
+        <button className="ale" name="ale" onClick={(e) => sortBeer(e)}>Ales</button>
+        <button className="ipa" name="ipa" onClick={(e) => sortBeer(e)}>Ipas</button>
+        <button className="saisons" name="saison" onClick={(e) => sortBeer(e)}>Saisons</button>
+        <button className="reset" name="allBeers" onClick={(e) => resetCards(e)}>All Beers</button>
       </div>
       <section className="homepage-grid">
         {cardData}

@@ -41,5 +41,12 @@ button {
   background-color: transparent;
   border: 1px solid white;
   color: white;
+}
 
+button:hover{
+  cursor: pointer;
+}
+button:focus{
+  background-color:orange;
+  color: black;
 }

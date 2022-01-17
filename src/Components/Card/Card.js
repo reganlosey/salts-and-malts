@@ -7,15 +7,15 @@ const Card = ({ id, name, abv, ibu }) => {
   return (
     <article className="beer-card" key={id}>
       <p>{name}</p>
-      <p>abv: {abv}</p>
-      <p>ibu: {ibu}</p>
+      <p>ABV: {abv}</p>
+      <p>IBU: {ibu}</p>
       <div className="info-container">
         <Link
           className="info-link"
           to={'/' + id}
           key={id}
           style={{ textDecoration: "none" }}>
-          see the salts that pair with this malt
+          See the salts that pair with this malt
           <img className="beer-icon"
             src="https://www.svgrepo.com/show/149438/pint-of-beer.svg" />
         </Link>
