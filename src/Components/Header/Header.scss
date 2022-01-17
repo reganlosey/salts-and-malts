@@ -1,13 +1,14 @@
 
 .header{
-  border: 2px solid darkgreen;
   color: white;
   display: flex;
-  height: 15%;
+  height: 8em;
   flex-wrap: nowrap;
   align-content: flex-end;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 100%;
+  align-items: stretch;
 }
 
 .site-name {
