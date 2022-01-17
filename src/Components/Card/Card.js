@@ -1,10 +1,7 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types'
 import './Card.scss'
-// import '../../../public/pint-of-beer.svg'
-
-
 
 const Card = ({ id, name, abv, ibu }) => {
   return (
