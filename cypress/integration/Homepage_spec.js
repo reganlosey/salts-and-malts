@@ -48,6 +48,15 @@ describe('Homepage', () => {
     .get('.ale')
     .should('have.attr', 'name', 'ale')
     .contains('ales')
+    .get('.ipa')
+    .should('have.attr', 'name', 'ipa')
+    .contains('ipas')
+    .get('.saisons')
+    .should('have.attr', 'name', 'saison')
+    .contains('saisons')
+    .get('.reset')
+    .should('have.attr', 'name', 'allBeers')
+    .contains('all beers')
 
   })
 
