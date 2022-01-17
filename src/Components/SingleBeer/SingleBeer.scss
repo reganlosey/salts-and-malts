@@ -1,0 +1,15 @@
+.single-beer-container{
+  border: 1px solid orange;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.beer-info{
+  border: 1px solid blue;
+}
+
+.food-pairing{
+  border: 2px steelblue;
+}

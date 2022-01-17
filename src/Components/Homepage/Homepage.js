@@ -18,7 +18,6 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
           ibu={beer.ibu}
           tagline={beer.tagline}
           description={beer.description}
-          foodPairing={beer.food_Pairing}
         />
       )
     })
@@ -36,7 +35,7 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
           ibu={beer.ibu}
           tagline={beer.tagline}
           description={beer.description}
-          foodPairing={beer.food_Pairing} />
+        />
       )
     })
     setCardData(beerCards)
@@ -61,7 +60,7 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
         <button name="ale" onClick={(e) => sortBeer(e)}>ales</button>
         <button name="ipa" onClick={(e) => sortBeer(e)}>ipas</button>
         <button name="saison" onClick={(e) => sortBeer(e)}>saisons</button>
-        <button name="allBeers" onClick={resetCards}>reset</button>
+        <button name="allBeers" onClick={resetCards}>all beers</button>
       </div>
       <section className="homepage-grid">
         {cardData}

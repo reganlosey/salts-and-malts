@@ -4,44 +4,33 @@ import './SingleBeer.scss'
 
 const SingleBeer = () => {
   const [singleData, setSingleData] = useState([]);
+  const [foodData, setFoodData] = useState([])
   let beerId = useLocation().pathname
-  // console.log(beerId)
 
-  // const getSingleBeer = () => {
-  //   const currentBeer = beerData.find((beer) => {
-  //     return beer.id === parseInt(beerId)
-  //   })
-  //   return currentBeer
-  // }
-
-  console.log(singleData)
-  
   useEffect(() => {
     const fetchSingleBeer = async (url) => {
-        const res = await fetch(url)
-        const resJson = await res.json()
-        
-        setSingleData(resJson[0])
+      const res = await fetch(url)
+      const resJson = await res.json()
+
+      setSingleData(resJson[0])
+      setFoodData(resJson[0].food_pairing)
     }
     fetchSingleBeer(`https://api.punkapi.com/v2/beers${beerId}`)
   }, [])
 
-
+  console.log(foodData[0])
 
   return (
-    <section className="single-beer">
+    <section className="single-beer-container">
       <div className="beer-info">
         <p className="beer-name">{singleData.name}</p>
         <p className="abv">{singleData.abv}</p>
         <p className="ibu">{singleData.ibu}</p>
-        <p className="food-pairing">{singleData.food_pairing}</p>
-        
-
+        <p>{foodData[0]}</p>
+        <p>{foodData[1]}</p>
+        <p>{foodData[2]}</p>
       </div>
-
-
-
-    </section>
+    </section >
   )
 
 

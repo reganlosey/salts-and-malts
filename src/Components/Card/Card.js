@@ -5,15 +5,24 @@ import './Card.scss'
 
 
 
-const Card = ({ id, name, abv, ibu, tagline, description }) => {
+const Card = ({ id, name, abv, ibu }) => {
   return (
     <article className="beer-card" key={id}>
       <p>{name}</p>
       <p>abv: {abv}</p>
       <p>ibu: {ibu}</p>
-      <img className="beer-icon" src="https://www.svgrepo.com/show/149438/pint-of-beer.svg" />
-      <Link className="info-link" to={'/' + id} key={id} style={{ textDecoration: "none" }}>
-        click here to see more</Link>
+      <div className="info-container">
+        <Link
+          className="info-link"
+          to={'/' + id}
+          key={id}
+          style={{ textDecoration: "none" }}>
+          click here to see more
+          <img className="beer-icon"
+            src="https://www.svgrepo.com/show/149438/pint-of-beer.svg" />
+        </Link>
+      </div>
+
     </article>
   )
 
