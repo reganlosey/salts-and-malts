@@ -4,8 +4,10 @@ import './SingleBeer.scss'
 
 const SingleBeer = () => {
   const [singleData, setSingleData] = useState([]);
-  const [foodData, setFoodData] = useState([])
+  const [foodData, setFoodData] = useState([]);
+  const [hopsData, setHopsData] = useState([]);
   let beerId = useLocation().pathname
+
 
   useEffect(() => {
     const fetchSingleBeer = async (url) => {
@@ -14,11 +16,11 @@ const SingleBeer = () => {
 
       setSingleData(resJson[0])
       setFoodData(resJson[0].food_pairing)
+      setHopsData(resJson[0].ingredients.hops[0].name)
     }
     fetchSingleBeer(`https://api.punkapi.com/v2/beers${beerId}`)
   }, [])
 
-  console.log(foodData[0])
 
   return (
     <section className="single-beer-container">
@@ -34,6 +36,7 @@ const SingleBeer = () => {
         About this brew
         <p className="abv">ABV: {singleData.abv}</p>
         <p className="ibu">IBU: {singleData.ibu}</p>
+        <p className="hops">Prominent Hops: {hopsData}</p>
         Pairs well with:
         <div className="pairings">
         <p>{foodData[0]}</p>

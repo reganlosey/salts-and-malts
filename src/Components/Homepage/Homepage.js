@@ -5,7 +5,8 @@ import './Homepage.scss';
 
 
 const Homepage = ({ beerData, filteredData, sortBeer }) => {
-  const [cardData, setCardData] = useState([])
+  const [cardData, setCardData] = useState([]);
+
 
   const initialRender = () => {
     const beerCards = beerData.map((beer) => {

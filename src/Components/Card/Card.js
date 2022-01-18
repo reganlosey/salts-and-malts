@@ -3,22 +3,18 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types'
 import './Card.scss'
 
-const Card = ({ id, name, abv, ibu }) => {
+const Card = ({ id, name, abv, ibu}) => {
   return (
     <article className="beer-card" key={id}>
-      <p>{name}</p>
+      <p className="card-name">{name}</p>
       <p>ABV: {abv}</p>
       <p>IBU: {ibu}</p>
-      <div className="info-container">
-          <Link
-            to={'/' + id}
-            key={id}
-            style={{ textDecoration: "none" }}>
-            <button className="pair-btn">See what pairs with this malt</button>
-          </Link>
-      </div>
-      <img className="beer-icon"
-        src="https://www.svgrepo.com/show/149438/pint-of-beer.svg" />
+      <Link
+        to={'/' + id}
+        key={id}
+        style={{ textDecoration: "none" }}>
+        <button className="pair-btn">See what pairs with this malt</button>
+      </Link>
     </article>
   )
 
