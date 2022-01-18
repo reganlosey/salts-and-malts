@@ -1,22 +1,39 @@
-
-.header{
+.header {
   color: white;
   display: flex;
-  height: 8em;
-  flex-wrap: nowrap;
-  align-content: flex-end;
-  flex-direction: column;
-  justify-content: space-evenly;
+  align-content: stretch;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  align-items: stretch;
   border-bottom: 3px solid #ffb100;
-}
+  
 
-.site-name {
-  font-size: 3em;
-  color: white;
+  .title-container{
+
+
+  .site-name {
+    font-size: 3em;
+    color: white;
+    border-bottom: 1px solid orange;
+    width: 330px;
+  }
+
+  .site-tagline {
+    font-size: 1.5em;
+    margin-left: 3em;
+  }
+  .icon-container{
+
+  }
+
+  .home-icon{
+    height: 3em;
+    width: 3em;
+    filter: invert(90%);
+  }
+
+  .home-icon:hover{
+    fill:red;
+  }
 }
-.site-tagline {
-  font-size: 1.5em;
-  margin-left: 3em;
 }

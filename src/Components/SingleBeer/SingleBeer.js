@@ -30,7 +30,6 @@ const SingleBeer = () => {
         <p className="tagline">{singleData.tagline}</p>
         <p className="description">{singleData.description}</p>
         </div>
-        <img className="beer-mug" src="https://www.svgrepo.com/show/227376/beer.svg" alt="mug-of-beer"/>
       </div>
       <div className="beer-info">
         About this brew

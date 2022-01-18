@@ -31,12 +31,16 @@ const App = () => {
     setFilteredData(filteredCards)
   }
 
+  const resetCards = () => {
+    setFilteredData([])
+  }
+
 
   return (
     <main className="App">
       <Header refreshData={fetchAllBeers}/>
       <Routes>
-        <Route path='/' element={<Homepage beerData={data} filteredData={filteredData} sortBeer={sortBeer} />} />
+        <Route path='/' element={<Homepage beerData={data} filteredData={filteredData}sortBeer={sortBeer} resetCards={resetCards}/>} />
         <Route path="/:beerId" element={<SingleBeer beerData={data} />} />
       </Routes>
     </main>

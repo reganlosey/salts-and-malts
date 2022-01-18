@@ -4,12 +4,9 @@ import Card from '../Card/Card';
 import './Homepage.scss';
 
 
-const Homepage = ({ beerData, filteredData, sortBeer }) => {
-  const [cardData, setCardData] = useState([]);
+const Homepage = ({ beerData, filteredData, sortBeer, resetCards}) => {
 
-
-  const initialRender = () => {
-    const beerCards = beerData.map((beer) => {
+  const initialRender = beerData.map((beer) => {
       return (
         <Card
           key={beer.id}
@@ -19,14 +16,12 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
           ibu={beer.ibu}
           tagline={beer.tagline}
           description={beer.description}
+          img={beer.image_url}
         />
-      )
-    })
-    setCardData(beerCards)
-  }
+        )
+      })
 
-  const filteredRender = () => {
-    const beerCards = filteredData.map((beer) => {
+  const filteredRender = filteredData.map((beer) => {
       return (
         <Card
           key={beer.id}
@@ -36,22 +31,31 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
           ibu={beer.ibu}
           tagline={beer.tagline}
           description={beer.description}
+          img={beer.image_url}
         />
       )
     })
-    setCardData(beerCards)
-  }
 
-  useEffect(() => {
-    initialRender()
-  }, [beerData])
+    // setCardData(beerCards)
 
-  useEffect(() => {
-    filteredRender()
-  }, [filteredData])
+  // useEffect(() => {
+  //   initialRender()
+  // }, [beerData])
 
-  const resetCards = () => {
-    initialRender()
+  // useEffect(() => {
+  //   filteredRender()
+  // }, [filteredData])
+
+  // const resetCards = () => {
+  //   initialRender()
+  // }
+
+  const displayedBeers = () => {
+    if (filteredData.length) {
+      return filteredRender
+    } else {
+      return initialRender
+    }
   }
 
   return (
@@ -64,7 +68,7 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
         <button className="sort-btn reset" name="allBeers" onClick={(e) => resetCards(e)}>All Beers</button>
       </div>
       <section className="homepage-grid">
-        {cardData}
+        {displayedBeers()}
       </section>
     </main>
   )
