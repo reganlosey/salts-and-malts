@@ -3,13 +3,7 @@ import { Link } from 'react-router-dom'
 import './ErrorPage.scss'
 
 
-const ErrorPage = ({ error }) => {
-
-  // const checkErr = error ? <h1>{error.message}</h1> :
-  //   <>
-  //     <h2>🤨Looking for something, friend?</h2>
-  //     <Link to={'/'}>Mosey on back to the homepage</Link>
-  //   </>
+const ErrorPage = () => {
 
   return (
     <div className="err-msg">
