@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useParams } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Homepage from './Components/Homepage/Homepage';
 import SingleBeer from './Components/SingleBeer/SingleBeer';
@@ -8,7 +8,12 @@ import './App.scss';
 
 const App = () => {
   const [data, setData] = useState([]);
+  const [error, setError] = useState([]);
+
   const [filteredData, setFilteredData] = useState([])
+  let beerId = useParams()
+
+  console.log(beerId)
 
   const fetchAllBeers = async (url) => {
     try {
@@ -16,7 +21,7 @@ const App = () => {
       const resJson = await res.json()
       setData(resJson)
     } catch (error) {
-      console.log(error)
+      setError(error)
     }
   }
 
@@ -37,12 +42,12 @@ const App = () => {
 
   return (
     <main className="App">
-      <Header refreshData={fetchAllBeers}/>
+      <Header refreshData={fetchAllBeers} />
       <Routes>
-        <Route path='*' element={<ErrorPage />} />
-        <Route path='/' element={<Homepage beerData={data} filteredData={filteredData}sortBeer={sortBeer} resetCards={resetCards}/>} />
+        <Route path='/*' element={<ErrorPage error={error} />} />
+        <Route path='/' element={<Homepage beerData={data} filteredData={filteredData} sortBeer={sortBeer} resetCards={resetCards} />} />
 
-        <Route path="/:beerId" element={<SingleBeer beerData={data} />} />
+        <Route path="/:beerId" element={<SingleBeer beerData={data} error={error}  />} />
       </Routes>
     </main>
   )
