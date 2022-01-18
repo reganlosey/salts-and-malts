@@ -1,15 +1,13 @@
 .homepage-grid {
   display: flex;
   grid-gap: 10px;
-  align-items: stretch;
   width: 100%;
   box-sizing: border-box;
-  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .filter-container {
-  border: 3px solid purple;
   width: 75vw;
   height: 85%;
 }
@@ -27,19 +25,29 @@
 }
 
 .button-container {
-  border: 1px solid magenta;
   height: 3em;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 auto;
 }
 
-button {
+.sort-btn {
   background-color: transparent;
   border: 1px solid white;
   color: white;
+  font-size: 1.5em;
+  border-radius: 3px;
+}
 
+.sort-btn:hover {
+  cursor: pointer;
+  background-color: orange;
+  color: black;
+}
+
+.sort-btn:focus {
+  background-color: orange;
+  color: black;
 }

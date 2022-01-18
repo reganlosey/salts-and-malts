@@ -4,11 +4,9 @@ import Card from '../Card/Card';
 import './Homepage.scss';
 
 
-const Homepage = ({ beerData, filteredData, sortBeer }) => {
-  const [cardData, setCardData] = useState([])
+const Homepage = ({ beerData, filteredData, sortBeer, resetCards}) => {
 
-  const initialRender = () => {
-    const beerCards = beerData.map((beer) => {
+  const initialRender = beerData.map((beer) => {
       return (
         <Card
           key={beer.id}
@@ -18,14 +16,12 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
           ibu={beer.ibu}
           tagline={beer.tagline}
           description={beer.description}
+          img={beer.image_url}
         />
-      )
-    })
-    setCardData(beerCards)
-  }
+        )
+      })
 
-  const filteredRender = () => {
-    const beerCards = filteredData.map((beer) => {
+  const filteredRender = filteredData.map((beer) => {
       return (
         <Card
           key={beer.id}
@@ -35,35 +31,44 @@ const Homepage = ({ beerData, filteredData, sortBeer }) => {
           ibu={beer.ibu}
           tagline={beer.tagline}
           description={beer.description}
+          img={beer.image_url}
         />
       )
     })
-    setCardData(beerCards)
+
+    // setCardData(beerCards)
+
+  // useEffect(() => {
+  //   initialRender()
+  // }, [beerData])
+
+  // useEffect(() => {
+  //   filteredRender()
+  // }, [filteredData])
+
+  // const resetCards = () => {
+  //   initialRender()
+  // }
+
+  const displayedBeers = () => {
+    if (filteredData.length) {
+      return filteredRender
+    } else {
+      return initialRender
+    }
   }
 
-  useEffect(() => {
-    initialRender()
-  }, [beerData])
-
-  useEffect(() => {
-    filteredRender()
-  }, [filteredData])
-
-  const resetCards = () => {
-    initialRender()
-  }
   return (
     <main>
       <div className="button-container">
-        sort by beer type
-        <button className="lager" name="lager" onClick={(e) => sortBeer(e)}>lagers</button>
-        <button className="ale" name="ale" onClick={(e) => sortBeer(e)}>ales</button>
-        <button className="ipa" name="ipa" onClick={(e) => sortBeer(e)}>ipas</button>
-        <button className="saisons" name="saison" onClick={(e) => sortBeer(e)}>saisons</button>
-        <button className="reset" name="allBeers" onClick={resetCards}>all beers</button>
+        <button className="sort-btn lager" name="lager" onClick={(e) => sortBeer(e)}>Lagers</button>
+        <button className="sort-btn ale" name="ale" onClick={(e) => sortBeer(e)}>Ales</button>
+        <button className="sort-btn ipa" name="ipa" onClick={(e) => sortBeer(e)}>Ipas</button>
+        <button className="sort-btn saison" name="saison" onClick={(e) => sortBeer(e)}>Saisons</button>
+        <button className="sort-btn reset" name="allBeers" onClick={(e) => resetCards(e)}>All Beers</button>
       </div>
       <section className="homepage-grid">
-        {cardData}
+        {displayedBeers()}
       </section>
     </main>
   )
