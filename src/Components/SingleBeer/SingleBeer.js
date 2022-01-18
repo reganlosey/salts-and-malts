@@ -8,6 +8,9 @@ const SingleBeer = () => {
   const [hopsData, setHopsData] = useState([]);
   let beerId = useLocation().pathname
 
+  console.log(beerId)
+
+
 
   useEffect(() => {
     const fetchSingleBeer = async (url) => {
@@ -20,6 +23,7 @@ const SingleBeer = () => {
     }
     fetchSingleBeer(`https://api.punkapi.com/v2/beers${beerId}`)
   }, [])
+
 
 
   return (

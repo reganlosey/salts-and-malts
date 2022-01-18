@@ -91,7 +91,6 @@ describe('Homepage', () => {
       .click()
       .get('.homepage-grid')
       .get(':nth-child(1) > .text-container >  a')
-      // .get(':nth-child(1) > .info-container > .info-link')
       .click()
       .get('.button-container').should('not.exist')
   })
