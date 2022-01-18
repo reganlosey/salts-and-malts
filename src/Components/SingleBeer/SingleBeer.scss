@@ -5,57 +5,64 @@
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
-}
 
-.beer-info {
-  border: 1px solid blue;
-  height: 100%;
-  width: 45vw;
 
-  .pairings {
-    border: 2px steelblue;
+  .beer-info {
+    border: 1px solid blue;
+    height: 100%;
+    width: 45vw;
+
+    .pairings {
+      border: 2px steelblue;
+    }
   }
-}
 
-.beer-container {
-  width: 50vw;
-}
+  .beer-container {
+    width: 60vw;
 
-.basic-info {
-  border: 1px solid red;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-}
+    .basic-info {
+      border: 1px solid red;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: wrap;
 
-.name {
-  border-bottom: 1px solid white;
-  font-size: 3em;
-}
+      .name {
+        border-bottom: 1px solid white;
+        font-size: 3em;
+      }
 
-.tagline {
-  font-size: 2em;
-}
+      .tagline {
+        font-size: 2em;
+      }
+      .description {
+        font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+      }
+    }
 
-.detailed-info {
-  border: 3px solid magenta;
-}
+    .detailed-info {
+      border: 3px solid magenta;
+      height: 32vh;
+      width: 60vw;
 
-.description {
-  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
+      .about {
+        font-size: 2em;
+      }
 
-.img-container {
+    }
+  }
+
+  .img-container {
     width: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
 
-  .image {
-    height: 85%;
-    filter: saturate(0);
-    filter: brightness(110%)
+    .image {
+      height: 95%;
+      filter: saturate(0);
+      filter: brightness(110%)
+    }
   }
 }
