@@ -22,10 +22,12 @@ const SingleBeer = () => {
 
   return (
     <section className="single-beer-container">
-      <div className="beer-name">
+      <div className="beer-container">
+        <div className="basic-info">
         <p className="name">{singleData.name}</p>
         <p className="tagline">{singleData.tagline}</p>
         <p className="description">{singleData.description}</p>
+        </div>
         <img className="beer-mug" src="https://www.svgrepo.com/show/227376/beer.svg" alt="mug-of-beer"/>
       </div>
       <div className="beer-info">

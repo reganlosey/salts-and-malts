@@ -17,14 +17,31 @@
 
   }
 }
-    .beer-name {
-      width: 45vw;
+    .beer-container {
+      width: 50vw;
+    }
+
+    .basic-info{
+      border: 1px solid red;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
     .name {
       border: 1px solid white;
       font-size: 3em;
+    }
 
+    .tagline{
+      font-size: 2em;
+
+    }
+
+    .description{
+      border: 1px solid red;
     }
 
     .beer-mug {

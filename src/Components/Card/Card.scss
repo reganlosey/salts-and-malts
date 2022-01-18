@@ -1,22 +1,25 @@
-.beer-card{
-  border: 1px solid white;
+.beer-card {
+  border: 2px solid rgb(255 160 77);
   display: flex;
-  height: 60px;
-  flex-direction: row;
+  height: 175px;
   font-size: 1.5em;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  flex-direction: column;
+  border-radius: 6px;
 }
 
-.info-container{
-  border: 1px solid magenta;
-
-}
-.info-link{
+.info-link {
   color: #ff8c2e;
 }
-.beer-icon{
+
+.beer-icon {
   height: 1em;
+}
+
+.pair-btn {
+  cursor: pointer;
+  
 }

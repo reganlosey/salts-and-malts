@@ -10,16 +10,15 @@ const Card = ({ id, name, abv, ibu }) => {
       <p>ABV: {abv}</p>
       <p>IBU: {ibu}</p>
       <div className="info-container">
-        <Link
-          className="info-link"
-          to={'/' + id}
-          key={id}
-          style={{ textDecoration: "none" }}>
-          See the salts that pair with this malt
-          <img className="beer-icon"
-            src="https://www.svgrepo.com/show/149438/pint-of-beer.svg" />
-        </Link>
+          <Link
+            to={'/' + id}
+            key={id}
+            style={{ textDecoration: "none" }}>
+            <button className="pair-btn">See what pairs with this malt</button>
+          </Link>
       </div>
+      <img className="beer-icon"
+        src="https://www.svgrepo.com/show/149438/pint-of-beer.svg" />
     </article>
   )
 
@@ -28,8 +27,8 @@ const Card = ({ id, name, abv, ibu }) => {
 export default Card
 
 Card.propTypes = {
-  id :PropTypes.number.isRequired,
-  name :PropTypes.string,
-  abv :PropTypes.number,
-  ibu :PropTypes.number,
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string,
+  abv: PropTypes.number,
+  ibu: PropTypes.number,
 };
