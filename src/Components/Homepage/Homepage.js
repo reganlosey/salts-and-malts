@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Card from '../Card/Card';
 import './Homepage.scss';
 
@@ -35,20 +35,6 @@ const Homepage = ({ beerData, filteredData, sortBeer, resetCards}) => {
         />
       )
     })
-
-    // setCardData(beerCards)
-
-  // useEffect(() => {
-  //   initialRender()
-  // }, [beerData])
-
-  // useEffect(() => {
-  //   filteredRender()
-  // }, [filteredData])
-
-  // const resetCards = () => {
-  //   initialRender()
-  // }
 
   const displayedBeers = () => {
     if (filteredData.length) {

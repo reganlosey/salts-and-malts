@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import './SingleBeer.scss'
 
 const SingleBeer = () => {
@@ -30,22 +30,31 @@ const SingleBeer = () => {
     <section className="single-beer-container">
       <div className="beer-container">
         <div className="basic-info">
-        <p className="name">{singleData.name}</p>
-        <p className="tagline">{singleData.tagline}</p>
-        <p className="description">{singleData.description}</p>
+          <p className="name">{singleData.name}</p>
+          <p className="tagline">{singleData.tagline}</p>
+          <p className="description">{singleData.description}</p>
+        </div>
+        <div className="detailed-info">
+        <p className="about">
+            More about this brew:
+          </p>
+          <div className="details">
+            <p>Prominent Hops: {hopsData}</p>
+            <p>Alcohol By Volume: {singleData.abv}</p>
+            <p>International Bitterness Units: {singleData.ibu}</p>
+          <p className="pairs-with">
+            Pairs well with:
+          </p>
+          <div className="pairings">
+            <p>{foodData[0]}</p>
+            <p>{foodData[1]}</p>
+            <p>{foodData[2]}</p>
+          </div>
+          </div>
         </div>
       </div>
-      <div className="beer-info">
-        About this brew
-        <p className="abv">ABV: {singleData.abv}</p>
-        <p className="ibu">IBU: {singleData.ibu}</p>
-        <p className="hops">Prominent Hops: {hopsData}</p>
-        Pairs well with:
-        <div className="pairings">
-        <p>{foodData[0]}</p>
-        <p>{foodData[1]}</p>
-        <p>{foodData[2]}</p>
-        </div>
+      <div className="img-container">
+        <img className="image" src={singleData.image_url}/>
       </div>
     </section >
   )
