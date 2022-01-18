@@ -3,9 +3,11 @@
   display: flex;
   align-content: stretch;
   flex-direction: row;
-  justify-content: space-between;
   width: 100%;
   border-bottom: 3px solid #ffb100;
+  height: 120px;
+  justify-content: flex-start;
+  align-items: center;
   
 
   .title-container{

@@ -9,7 +9,7 @@ const Header = () => {
         <p className="site-tagline">A beer-food pairing app that rises in the yeast and sets in the waist.</p>
       </div>
       <div className="icon-container">
-        <NavLink to={"/"}><img className="home-icon" src="https://www.svgrepo.com/show/18449/home.svg" alt="home icon" /> </NavLink>
+        <NavLink to={"/"}><img className="home-icon" src="https://www.svgrepo.com/show/18449/home.svg" alt="home icon" /></NavLink>
       </div>
     </header>
   )
