@@ -17,7 +17,7 @@ const Card = ({ id, name, abv, ibu, img}) => {
         to={'/' + id}
         key={id}
         style={{ textDecoration: "none" }}>
-        <button className="pair-btn">See what pairs with this malt</button>
+        <button className="pair-btn">More about this brew</button>
       </Link>
       </div>
     </article>
