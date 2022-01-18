@@ -1,6 +1,6 @@
 .single-beer-container {
   border: 1px solid orange;
-  height: 80vh;
+  height: 82vh;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -49,7 +49,12 @@
       .about {
         font-size: 2em;
       }
-
+      .pairs-with{
+        font-size: 2em;
+      }
+      .details{
+        font-size: 1em;
+      }
     }
   }
 

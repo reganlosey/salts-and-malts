@@ -35,9 +35,13 @@ const SingleBeer = () => {
           <p className="description">{singleData.description}</p>
         </div>
         <div className="detailed-info">
-          <p className="about">About this brew
+        <p className="about">
+            More about this brew:
           </p>
-          <p className="hops">Prominent Hops: {hopsData}</p>
+          <div className="details">
+            <p>Prominent Hops: {hopsData}</p>
+            <p>Alcohol By Volume: {singleData.abv}</p>
+            <p>International Bitterness Units: {singleData.ibu}</p>
           <p className="pairs-with">
             Pairs well with:
           </p>
@@ -45,6 +49,7 @@ const SingleBeer = () => {
             <p>{foodData[0]}</p>
             <p>{foodData[1]}</p>
             <p>{foodData[2]}</p>
+          </div>
           </div>
         </div>
       </div>
