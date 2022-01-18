@@ -38,13 +38,13 @@
       }
       .description {
         font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+        border-bottom: 2px solid orange;
       }
     }
 
     .detailed-info {
-      border: 3px solid magenta;
-      height: 29vh;
-      width: 60vw;
+    height: 29vh;
+    width: 29vw;
 
       .about {
         font-size: 2em;
