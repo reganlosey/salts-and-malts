@@ -14,14 +14,14 @@ describe('Single Beer Page', () => {
   it('should still be displaying the header component', () => {
     cy.get('.header')
     .get('.site-name')
-    .contains('salts and malts')
-    .get('.tagline')
-    .contains('a beer-food pairing app that rises in the yeast and sets in the waist')
+    .contains('Salts and Malts')
+    .get('.site-tagline')
+    .contains('A beer-food pairing app that rises in the yeast and sets in the waist')
 
   })
 
-  it('should display the current beer\'s name and tagline', () => {
-    cy.get('.beer-name')
+  it('should display the current beer\'s name, tagline and description', () => {
+    cy.get('.basic-info')
     .get('.name')
     .contains('Buzz')
     .get('.tagline')
@@ -29,13 +29,16 @@ describe('Single Beer Page', () => {
   })
 
   it('should have more detailed info about the beer', () => {
-    cy.get('.beer-info')
-    .contains('about this brew')
-    .get('.abv')
-    .contains('abv: 4.5')
-    .get('.ibu')
-    .contains('ibu: 60')
-    .get('.pairings')
+    cy.get('.about')
+    .contains('More about this brew:')
+    cy.get('.details')
+    .get(':nth-child(1)')
+    .contains('Prominent Hops: Fuggles')
+    .get(':nth-child(2)')
+    .contains('Alcohol By Volume: 4.5')
+    .get(':nth-child(3)')
+    .contains('International Bitterness Units: 60')
+    cy.get('.pairings')
     .get(':nth-child(1)')
     .contains('Spicy chicken tikka masala')
     .get(':nth-child(2)')

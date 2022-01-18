@@ -8,7 +8,6 @@ const SingleBeer = () => {
   const [hopsData, setHopsData] = useState([]);
   let beerId = useLocation().pathname
 
-  console.log(beerId)
 
 
 
