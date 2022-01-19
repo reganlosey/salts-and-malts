@@ -13,8 +13,6 @@ const App = () => {
   const [filteredData, setFilteredData] = useState([])
   let beerId = useParams()
 
-  console.log(beerId)
-
   const fetchAllBeers = async (url) => {
     try {
       const res = await fetch(url)
@@ -44,10 +42,9 @@ const App = () => {
     <main className="App">
       <Header refreshData={fetchAllBeers} />
       <Routes>
-        <Route path='/*' element={<ErrorPage error={error} />} />
+        <Route path='/*' element={<ErrorPage/>} />
         <Route path='/' element={<Homepage beerData={data} filteredData={filteredData} sortBeer={sortBeer} resetCards={resetCards} />} />
-
-        <Route path="/:beerId" element={<SingleBeer beerData={data} error={error}  />} />
+        <Route path="/:beerId" element={<SingleBeer beerData={data} />} />
       </Routes>
     </main>
   )

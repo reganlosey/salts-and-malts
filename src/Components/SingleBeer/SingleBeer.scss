@@ -4,6 +4,8 @@
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: nowrap;
+  width: 80%;
+  margin: 0 auto;
 
 
   .beer-info {
@@ -30,6 +32,7 @@
       .tagline {
         font-size: 2em;
       }
+
       .description {
         font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
         border-bottom: 2px solid orange;
@@ -37,19 +40,21 @@
     }
 
     .detailed-info {
-    height: 29vh;
-    width: 29vw;
-    margin: 20px;
+      height: 29vh;
+      width: 29vw;
+      margin: 20px;
 
       .about {
         font-size: 2em;
         border-bottom: 1px solid black;
       }
-      .pairs-with{
+
+      .pairs-with {
         font-size: 2em;
         border-bottom: 1px solid black;
       }
-      .details{
+
+      .details {
         font-size: 1em;
       }
     }

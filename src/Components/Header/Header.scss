@@ -3,11 +3,12 @@
   display: flex;
   align-content: stretch;
   flex-direction: row;
-  width: 100%;
-  border-bottom: 3px solid #ffb100;
+  width: 80%;
+  border-bottom: 3px solid black;
   height: 95px;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 0 auto;
   
 
   .title-container{
