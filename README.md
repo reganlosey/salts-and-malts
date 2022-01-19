@@ -1,4 +1,4 @@
-# [Salts and Malts](https://kbergsund.github.io/sour-pomodoro/) 
+# [Salts and Malts](https://reganlosey.github.io/salts-and-malts/) 
 
 
  ## A Front End Engineering Project by: 
@@ -8,7 +8,6 @@
  ### Project Managers: 
   - [Cassandra Torkse](https://github.com/CassandraGoose)
   -  [Kayla Gordon](https://github.com/kaylagordon)
-
 
 <hr>
 
@@ -32,7 +31,7 @@ This project uses React.js, React Router, Cypress, and SASS to actively manipula
 
 
 ## Install & Setup
-* Visit deployed site [here](https://kbergsund.github.io/sour-pomodoro/)
+* Visit deployed site [here](https://reganlosey.github.io/salts-and-malts/)
 Or:
 1. Clone this down
 2. `cd` into the directory
