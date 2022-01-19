@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/salts-and-malts/static/css/main.a1fa6701.css",
+    "main.js": "/salts-and-malts/static/js/main.b8675c10.js",
+    "static/js/787.c93158ed.chunk.js": "/salts-and-malts/static/js/787.c93158ed.chunk.js",
+    "index.html": "/salts-and-malts/index.html",
+    "main.a1fa6701.css.map": "/salts-and-malts/static/css/main.a1fa6701.css.map",
+    "main.b8675c10.js.map": "/salts-and-malts/static/js/main.b8675c10.js.map",
+    "787.c93158ed.chunk.js.map": "/salts-and-malts/static/js/787.c93158ed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1fa6701.css",
+    "static/js/main.b8675c10.js"
+  ]
+}
