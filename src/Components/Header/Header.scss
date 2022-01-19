@@ -1,41 +1,37 @@
 .header {
-  color: white;
+  color: black;
   display: flex;
   align-content: stretch;
   flex-direction: row;
   width: 100%;
   border-bottom: 3px solid #ffb100;
-  height: 120px;
-  justify-content: flex-start;
-  align-items: center;
+  height: 95px;
+  justify-content: space-between;
+  align-items: flex-start;
   
 
   .title-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
 
   .site-name {
     font-size: 3em;
-    color: white;
-    border-bottom: 1px solid orange;
+    color: black;
+    border-bottom: 2px solid orange;
     width: 330px;
+    margin-left: 10px;
   }
 
   .site-tagline {
     font-size: 1.5em;
-    margin-left: 3em;
+    margin: 10px 0 0 30px;
   }
-  .icon-container{
-
-  }
-
+}
   .home-icon{
     height: 3em;
     width: 3em;
-    filter: invert(90%);
+    margin: 15px 20px;
   }
-
-  .home-icon:hover{
-    fill:red;
-  }
-}
 }
