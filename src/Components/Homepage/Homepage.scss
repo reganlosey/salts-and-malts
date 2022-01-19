@@ -1,53 +1,41 @@
 .homepage-grid {
   display: flex;
   grid-gap: 10px;
-  width: 100%;
+  width: 80%;
   box-sizing: border-box;
+  align-items: center;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-}
-
-.filter-container {
-  width: 75vw;
-  height: 85%;
-}
-
-.start-text {
-  font-size: 2em;
-  text-align: center;
-}
-
-.filter-links {
-  border: 2px solid white;
-  height: 90%;
-  width: 90%;
   margin: 0 auto;
 }
 
 .button-container {
-  height: 3em;
+  height: 7vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   margin: 0 auto;
+  width: 80%;
 }
 
 .sort-btn {
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
+  background-color: orange;
+  border: 1px solid black;
+  color: black;
   font-size: 1.5em;
+  box-shadow: 1.5px 1px 2px black;
   border-radius: 3px;
 }
 
 .sort-btn:hover {
   cursor: pointer;
-  background-color: orange;
+  background-color: transparent;
   color: black;
 }
 
 .sort-btn:focus {
-  background-color: orange;
+  background-color: transparent;
   color: black;
 }
