@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# [Salts and Malts](https://kbergsund.github.io/sour-pomodoro/) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+ ## A Front End Engineering Project by: 
+  - [Regan Losey](https://github.com/reganlosey)
 
-In the project directory, you can run:
 
-### `npm start`
+ ### Project Managers: 
+  - [Cassandra Torkse](https://github.com/CassandraGoose)
+  -  [Kayla Gordon](https://github.com/kaylagordon)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<hr>
 
-### `npm test`
+## Overview
+- Salts and Malts was designed to allow users to view detailed information about beer, including abv, ibu, a brief description, and a short list of food pairings. 
+The homepage provides a view of all available beers as well as buttons that allow the user to sort the beers by the type listed on each button. Users have the ability to click on the "More about this brew" button to be redirected to a page that expands on that specific beer's information.
+This project uses React.js, React Router, Cypress, and SASS to actively manipulate data from [BrewDog's Punk API](https://punkapi.com/) into an intuitive user experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Languages/Technology
+- React 
+- React Router
+- Javascript
+- HTML
+- SASS/SCSS
+- Cypress
 
-### `npm run build`
+## Learning Goals
+- Display competency and gain experience with React.js
+- Create a multi-page UX using Router
+- Test React components & asynchronous Javascript using End-to-End testing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Install & Setup
+* Visit deployed site [here](https://kbergsund.github.io/sour-pomodoro/)
+Or:
+1. Clone this down
+2. `cd` into the directory
+3. Run `npm install` and then `npm start`
+5. Head to `localhost:3000` in your browser  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Use:
+- Scroll through the homepage to see all available beers and a quick view of their ABV and IBU. To filter by a specific style of beer, click the corresponding button on the top.
+Click on the beer's "More about this brew" button to be redirected to an expanded view with more information.
+<img src="https://user-images.githubusercontent.com/82983696/150042596-27626dc0-9272-4f31-ab4d-d6141bbafbe7.gif"  width="800">
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Future Directions
+1. Add a search bar to the homepage to search by beer name.
+2. Implement filtering by other queries.
+   
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Spec & Rubric
+- [Here](https://frontend.turing.edu/projects/module-3/rancid-tomatillos-v3.html)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Resources:
+  - [reactjs.org](https://reactjs.org/)
+  - [docs.cypress.io](https://docs.cypress.io/)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
