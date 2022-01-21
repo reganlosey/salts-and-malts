@@ -6,47 +6,55 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-    .basic-info {
-      width: 75%;
-      margin: 20px;
+  .beer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
 
-      .name {
-        border-bottom: 1px solid black;
-        font-size: 3em;
-      }
+  .basic-info {
+    width: 75%;
+    margin: 20px;
 
-      .tagline {
-        font-size: 2em;
-      }
-
-      .description {
-        font-size: 1.3em;
-        border-bottom: 2px solid orange;
-      }
+    .name {
+      border-bottom: 1px solid black;
+      font-size: 3em;
     }
 
-    .detailed-info {
-      height: 29vh;
-      width: 29vw;
-      margin: 20px;
+    .tagline {
+      font-size: 2em;
+    }
 
-      .about {
-        font-size: 2em;
-        border-bottom: 1px solid black;
-      }
-
-      .pairs-with {
-        font-size: 2em;
-        border-bottom: 1px solid black;
-      }
-
-      .details {
-        font-size: 1em;
-      }
+    .description {
+      font-size: 1.3em;
+      border-bottom: 2px solid orange;
     }
   }
 
-  .image {
-    height: 95%;
-    filter: brightness(110%)
+  .detailed-info {
+    height: 29vh;
+    width: 29vw;
+    margin: 20px;
+
+    .about {
+      font-size: 1.4em;
+      border-bottom: 1px solid black;
+      margin-bottom: 5px;
+    }
+
+    .pairs-with {
+      font-size: 1.4em;
+      border-bottom: 1px solid black;
+      margin-bottom: 5px;
+    }
+
+    .details {
+      font-size: 1em;
+    }
   }
+}
+
+.image {
+  height: 95%;
+  filter: brightness(110%)
+}
