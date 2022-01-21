@@ -3,36 +3,47 @@
   display: flex;
   align-content: stretch;
   flex-direction: row;
-  width: 80%;
   border-bottom: 3px solid black;
-  height: 95px;
+  height: 20%;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 0 auto;
-  
 
-  .title-container{
+
+  .title-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
     flex-wrap: wrap;
+    width: 75%;
 
 
-  .site-name {
-    font-size: 3em;
-    color: black;
-    border-bottom: 2px solid orange;
-    width: 330px;
-    margin-left: 10px;
+    .site-name {
+      font-size: 3em;
+      color: black;
+      border-bottom: 2px solid orange;
+      margin-left: 10px;
+    }
+
+    .site-tagline {
+      font-size: 1.5em;
+      padding: 5px;
+    }
+  }
+
+  .home-icon {
+    height: 3em;
+    width: 3em;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width : 833px) {
+  .header {
+    border: 2px solid magenta;
   }
 
   .site-tagline {
-    font-size: 1.5em;
-    margin: 10px 0 0 30px;
-  }
-}
-  .home-icon{
-    height: 3em;
-    width: 3em;
-    margin: 15px 20px;
+    font-size: 3vw;
   }
 }
