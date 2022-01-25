@@ -1,11 +1,3 @@
-// .single-beer-container {
-  // height: 80%;
-  // width: 75%;
-  // display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-
   .beer-container {
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +9,7 @@
     margin: 20px;
 
     .name {
-      border-bottom: 1px solid black;
+      border-bottom: 2px solid orange;
       font-size: 3em;
     }
 
@@ -28,23 +20,34 @@
 
     .description {
       font-size: 1.3em;
-      border-bottom: 2px solid orange;
-    }
-    .details {
-      font-size: 1.2em;
+      border-bottom: 2px solid black;
       padding: 1%;
+
+    }
+
+    .details {
+      font-size: .9em;
+      padding: 1%;
+      margin-top: 1.5%;
       text-align: center;
+      border: 3px solid black;
+      background-color: #ffffffc2;
+      border-radius: 10px;
+      width: -moz-fit-content;
+      width: fit-content;
     }
   }
 
   .detailed-info {
-    margin: 20px;
+    margin: 1%;
     padding: 2%;
     font-size: 1.3em;
     border: 5px solid black;
     background-color: #ffa500c2;
     border-radius: 10px;
+    height: -moz-fit-content;
     height: fit-content;
+    width: 65%;
 
 
     .about {
@@ -57,23 +60,24 @@
       font-size: 1.4em;
       border-bottom: 1px solid black;
       margin: 10px 0;
-      text-align:center;
+      text-align: center;
     }
 
-    .pairings{
-      border: 1px solid black;
+    .pairings > p {
+      margin: 5px;
     }
 
   }
-// }
-.image {
-  height: 27em;
-  filter: brightness(110%);
-  margin: auto;
-}
 
-@media screen and (max-width: 1000px) {
-  .beer-container{
-    border: 1px solid magenta;
+  // }
+  .image {
+    height: 27em;
+    filter: brightness(115%);
+    margin: 2%;
   }
-}
+
+  @media screen and (max-width: 1000px) {
+    .beer-container {
+      border: 1px solid magenta;
+    }
+  }
