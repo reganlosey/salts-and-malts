@@ -5,7 +5,6 @@
   box-sizing: border-box;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: center;
   margin: 0 auto;
 }
@@ -13,21 +12,22 @@
 .button-container {
   height: 7vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 20px auto;
   margin-top: 20px;
-  width: 90%;
 }
 
 .sort-btn {
   background-color: orange;
   border: 1px solid black;
   color: black;
-  font-size: 1.5em;
+  font-size: 22px;
   box-shadow: 1.5px 1px 2px black;
   border-radius: 3px;
+  margin: 1% 4%;
+  padding: 0.5%;
 }
 
 .sort-btn:hover {
@@ -39,4 +39,39 @@
 .sort-btn:focus {
   background-color: transparent;
   color: black;
+}
+
+// @media screen and(max-width: 972px) {
+//   .button-container {
+//     border: 1px solid magenta;
+//   }
+
+//   .homepage-grid {
+//     width: 100%;
+//   }
+
+  
+// }
+
+@media screen and (max-width: 738px) {
+  .button-container{
+    height: 7vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 1% 10%;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  .button-container {
+    height: 7vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin: 0 10% 10%;
+  }
 }

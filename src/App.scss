@@ -17,30 +17,3 @@ body {
   min-height:100%;
 }
 
-@media screen and (max-width: 680px) {
-  .about{
-    font-size: 2.4em;
-  }
-  .detailed-info{
-    font-size: 1.2em;
-  }
-  main{
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 459px) {
-  .button-container{
-    border: 1px solid magenta;
-  }
-
-  .sort-btn{
-    background-color: orange;
-    border: 1px solid black;
-    color: black;
-    font-size: 22px;
-    box-shadow: 1.5px 1px 2px black;
-    border-radius: 3px;
-  }
-
-}
