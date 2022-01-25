@@ -4,7 +4,6 @@
   align-content: stretch;
   flex-direction: row;
   border-bottom: 3px solid black;
-  // height: 15%;
   justify-content: space-between;
   align-items: flex-start;
 
@@ -37,13 +36,3 @@
     margin: 10px;
   }
 }
-
-// @media screen and (max-width : 833px) {
-//   .header {
-//     border: 2px solid magenta;
-//   }
-
-//   .site-tagline {
-//     font-size: 3vw;
-//   }
-// }
