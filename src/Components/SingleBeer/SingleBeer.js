@@ -32,27 +32,22 @@ const SingleBeer = () => {
           <p className="name">{singleData.name}</p>
           <p className="tagline">{singleData.tagline}</p>
           <p className="description">{singleData.description}</p>
-        </div>
-        <div className="detailed-info">
-        <p className="about">
-            More about this brew:
-          </p>
+          <div className="detailed-info">
+            <p className="pairs-with">
+              Pairs well with:
+            </p>
+            <div className="pairings">
+              <p>{foodData[0] + '.'}</p>
+              <p>{foodData[1] + '.'}</p>
+              <p>{foodData[2] + '.'}</p>
+            </div>
           <div className="details">
             <p>Prominent Hops: {hopsData}</p>
             <p>Alcohol By Volume: {singleData.abv}</p>
             <p>International Bitterness Units: {singleData.ibu}</p>
-          <p className="pairs-with">
-            Pairs well with:
-          </p>
-          <div className="pairings">
-            <p>{foodData[0]}</p>
-            <p>{foodData[1]}</p>
-            <p>{foodData[2]}</p>
           </div>
           </div>
         </div>
-      </div>
-      <div className="img-container">
         <img className="image" src={singleData.image_url}/>
       </div>
     </section >
