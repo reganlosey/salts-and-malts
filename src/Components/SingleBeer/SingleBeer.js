@@ -51,8 +51,8 @@ const SingleBeer = () => {
           </div>
           </div>
         </div>
-      </div>
         <img className="image" src={singleData.image_url}/>
+      </div>
     </section >
   )
 
