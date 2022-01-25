@@ -38,7 +38,7 @@ describe('Homepage', () => {
       .get('.homepage-grid > :nth-child(1)')
       .get(':nth-child(1) > .text-container')
       .get(':nth-child(1) > .text-container > a')
-      .should('have.attr', 'href', '/1')
+      .should('have.attr', 'href', '#/1')
   })
 
   it('should have button with beer type labels', () => {
