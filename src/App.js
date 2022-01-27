@@ -38,7 +38,7 @@ const App = () => {
     setFilteredData([])
   }
 
-  if (data) {
+  if (!data.length) {
     return (
       <div className="loading-spinner">
         <h1>Site is brewing, hang tight!</h1>
