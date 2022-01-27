@@ -28,17 +28,19 @@
   border-radius: 3px;
   margin: 1% 4%;
   padding: 0.5%;
-}
-
-.sort-btn:hover {
-  cursor: pointer;
-  background-color: transparent;
-  color: black;
-}
-
-.sort-btn:focus {
-  background-color: transparent;
-  color: black;
+  
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    transform: scale(1.1)
+  }
+  
+  &:focus {
+    background-color: transparent;
+    color: black;
+    transform: scale(1.1)
+  }
 }
 
 

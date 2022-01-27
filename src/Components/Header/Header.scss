@@ -16,12 +16,11 @@
     flex-wrap: wrap;
     width: 75%;
 
-
     .site-name {
       font-size: 3em;
       color: black;
       border-bottom: 2px solid orange;
-      margin-left: 10px;
+      margin-left: 10px; 
     }
 
     .site-tagline {
@@ -34,5 +33,8 @@
     height: 3em;
     width: 3em;
     margin: 10px;
+    &:hover{
+      transform: scale(1.1)
+    }
   }
 }

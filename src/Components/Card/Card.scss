@@ -14,7 +14,7 @@
     font-size: 1.5em;
   }
 
-  .text-container{
+  .text-container {
     font-size: 1.2em;
   }
 
@@ -31,16 +31,17 @@
     cursor: pointer;
     font-size: 21px;
     border-radius: 5px;
-  }
 
-  .pair-btn:hover {
-    cursor: pointer;
-    background-color: transparent;
-    color: black;
-  }
-  
-  .pair-btn:focus {
-    background-color: transparent;
-    color: black;
+    &:hover {
+      cursor: pointer;
+      background-color: transparent;
+      transform: scale(1.1);
+      color: black;
+    }
+
+    &:focus {
+      background-color: transparent;
+      color: black;
+    }
   }
 }
