@@ -7,7 +7,7 @@ const ErrorPage = () => {
 
   return (
     <div className="err-msg">
-        <h2>🤨Looking for something, friend?</h2>
+        <h2>🤨 Looking for something, friend?</h2>
         <Link to={'/'} style={{color: "orange"}}>Click here to mosey on back to the homepage</Link>
     </div>
   )
