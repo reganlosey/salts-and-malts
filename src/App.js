@@ -51,7 +51,7 @@ const App = () => {
       <main className="App">
         <Header refreshData={fetchAllBeers} />
         <Routes>
-          <Route path='/:invalidURL' element={<ErrorPage />} />
+          <Route path='/*' element={<ErrorPage />} />
           <Route path='/' element={<Homepage beerData={data} filteredData={filteredData} sortBeer={sortBeer} resetCards={resetCards} />} />
           <Route path="/:beerId" element={<SingleBeer beerData={data} />} />
         </Routes>
