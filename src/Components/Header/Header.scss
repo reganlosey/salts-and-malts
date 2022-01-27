@@ -1,5 +1,5 @@
 .header {
-  color: black;
+  color: white;
   display: flex;
   align-content: stretch;
   flex-direction: row;
@@ -17,8 +17,8 @@
     width: 65%;
 
     .site-name {
-      font-size: 3em;
-      color: black;
+      font-size: 2.7em;
+      color: white;
       border-bottom: 2px solid orange;
       margin-left: 10px; 
     }
@@ -33,6 +33,7 @@
     height: 3em;
     width: 3em;
     margin: 10px;
+    filter: invert(100%);
     &:hover{
       transform: scale(1.1)
     }
