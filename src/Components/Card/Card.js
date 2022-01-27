@@ -14,7 +14,7 @@ const Card = ({ id, name, abv, ibu}) => {
         to={'/' + id}
         key={id}
         style={{ textDecoration: "none" }}>
-        <button className="pair-btn">More about this brew</button>
+        <button className="about-btn">More about this brew</button>
       </Link>
       </div>
     </article>

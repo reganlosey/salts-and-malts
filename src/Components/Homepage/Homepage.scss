@@ -10,7 +10,6 @@
 }
 
 .button-container {
-  height: 7vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -40,18 +39,6 @@
     background-color: transparent;
     color: black;
     transform: scale(1.1)
-  }
-}
-
-
-@media screen and (max-width: 738px) {
-  .button-container{
-    height: 7vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 1% 1% 10%;
   }
 }
 
