@@ -1,11 +1,11 @@
 .err-msg{
-  border: 3px solid black;
   color: black;
-  height: 80%;
-  font-size: 3em;
+  height: 50vh;
+  font-size: 2.5em;
   text-align: center;
-  padding: 2em;
   display: flex;
+  padding: 2%;
+  justify-content: center;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
 }

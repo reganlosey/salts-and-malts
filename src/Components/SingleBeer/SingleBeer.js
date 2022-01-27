@@ -8,9 +8,6 @@ const SingleBeer = () => {
   const [hopsData, setHopsData] = useState([]);
   let beerId = useLocation().pathname
 
-
-
-
   useEffect(() => {
     const fetchSingleBeer = async (url) => {
       const res = await fetch(url)
