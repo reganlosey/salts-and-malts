@@ -1,5 +1,6 @@
 {
   "name": "salts-and-malts",
+  "homepage": "https://reganlosey.github.io/salts-and-malts/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,6 +20,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cypress:open": "cypress open"
@@ -42,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^9.2.1"
+    "cypress": "^9.2.1",
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
