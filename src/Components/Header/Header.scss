@@ -33,6 +33,7 @@
     height: 3em;
     width: 3em;
     margin: 10px;
+    filter: drop-shadow(6px 2px 0px black);
     &:hover{
       transform: scale(1.1)
     }
