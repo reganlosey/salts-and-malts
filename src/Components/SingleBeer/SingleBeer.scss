@@ -4,6 +4,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 5%
   }
 
   .beer-container {
@@ -94,7 +95,7 @@
     .beer-container{
       display: flex;
       justify-content: space-around;
-      padding: 7%;
+      padding: initial;
     }
 
     .basic-info {
