@@ -22,25 +22,25 @@
   background-color: darkorange;
   border: 1px solid black;
   color: black;
-  font-size: 22px;
+  font-size: 1.5rem;
   box-shadow: 1.5px 1px 2px blanchedalmond;
   border-radius: 3px;
   margin: 1% 4%;
   padding: 0.5%;
-  
+
   &:hover {
     cursor: pointer;
     background-color: blanchedalmond;
     color: black;
-    transform:scale(1.05);
-      transition-duration: 200ms;
+    transform: scale(1.05);
+    transition-duration: 200ms;
   }
-  
+
   &:focus {
     background-color: blanchedalmond;
     color: black;
-    transform:scale(1.05);
-      transition-duration: 200ms;
+    transform: scale(1.05);
+    transition-duration: 200ms;
   }
 }
 
@@ -52,6 +52,6 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin: 1%0 10% 0%;
+    margin: 0 10% 10%;
   }
 }
