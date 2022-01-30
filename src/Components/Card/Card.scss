@@ -2,8 +2,6 @@
   border: 2px solid black;
   display: flex;
   height: 285px;
-  font-size: 95%;
-  align-items: flex-start;
   width: 343px;
   border-radius: 6px;
   box-shadow: 0px 0px 4px black;
@@ -12,6 +10,7 @@
   justify-content: center;
   align-content: center;
   background-color: brown;
+  margin: 2%;
 
   .card-name {
     font-size: 1.5em;
@@ -44,7 +43,7 @@
     border-radius: 5px;
     border: 2px solid black;
     box-shadow: 3px 3px black;
-    margin:10px;
+    margin: 10px;
 
     &:hover {
       cursor: pointer;
@@ -62,6 +61,14 @@
       transition-duration: 200ms;
     }
   }
+}
 
+@media screen and (max-width:1000px){
+  .beer-card{
 
+    .card-name{
+      font-size: 1.3rem;
+    }
+
+  }
 }
