@@ -39,30 +39,38 @@ Or:
 5. Head to `localhost:3000` in your browser  
 
 ## How to Use:
-- Scroll through the homepage to see all available beers and a quick view of their ABV and IBU. To filter by a specific style of beer, click the corresponding button on the top.
+Scroll through the homepage to see all available beers and a quick view of their ABV and IBU. To filter by a specific style of beer, click the corresponding button on the top.
 Click on the beer's "More about this brew" button to be redirected to an expanded view with more information.
-<img src="https://user-images.githubusercontent.com/82983696/150042596-27626dc0-9272-4f31-ab4d-d6141bbafbe7.gif"  width="800">
+
+<br>
+<img src="https://user-images.githubusercontent.com/82983696/151720014-8304e932-1cc0-463a-818b-72521484defa.gif"  width="800">
 
 <br>
 
 ## Main Page 
-<img src="https://user-images.githubusercontent.com/82983696/151076333-6f133086-1a0e-463f-b423-ab4d857ce169.png"  width="800">
+<img src="https://user-images.githubusercontent.com/82983696/151719969-48e62a03-f3a8-4571-a2a0-a5a489bfc863.png"  width="800">
+
+<br>
 
 ## Single Beer Detail Page
-<img src="https://user-images.githubusercontent.com/82983696/151076342-2b8e8fa4-362d-4d4a-a732-9f65fd9f772c.png"  width="800">
+<img src="https://user-images.githubusercontent.com/82983696/151719971-8d11dcbc-231d-4b66-aa03-19564ac4d332.png"  width="800">
+<br>
+<br>
 
 ## Responsive Design
-<img align="left" src="https://user-images.githubusercontent.com/82983696/151076348-b841d7f2-f6fa-40b3-941f-d4a24bc92d94.png"  width="350">
+<img src="https://user-images.githubusercontent.com/82983696/151719973-9aedca24-e472-4d22-8736-870e27a8b5e1.png"  width="350">
 
-<img src="https://user-images.githubusercontent.com/82983696/151077146-610310fd-874d-4cac-8ccd-fb0ea5b7302b.png"  width="350">
+<img align="center" src="https://user-images.githubusercontent.com/82983696/151719974-1bb5536f-8628-45ba-bae1-92adbbcd4feb.png"  width="350">
 
-<img src="https://user-images.githubusercontent.com/82983696/151076350-93d1d816-a28e-4aca-a284-84bb751ac2e7.png"  width="400">
+<hr>
+
 
 
 ## Future Directions
 1. Add a search bar to the homepage to search by beer name.
 2. Implement filtering by other queries.
 3. Add food icons as they relate to the pairings.
+4. Increase design responsiveness for text on expanded beer page.
    
 ## Wins:
 - The biggest win I had during this project was manipulating the data from the API I was working with. Each object is huge with a ton of different properties so getting everything to condense down so that I could use it was a victory for sure.
