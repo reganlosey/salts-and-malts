@@ -46,3 +46,10 @@
     }
   }
 }
+
+@media screen and(max-width: 1000px) {
+  .header {
+    border: 1px magenta;
+    font-size: .9rem;
+  }
+}

@@ -1,3 +1,12 @@
+  .single-beer-container {
+    border: 1px solid blueviolet;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .beer-container {
     display: flex;
     flex-wrap: wrap;
