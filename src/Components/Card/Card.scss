@@ -17,7 +17,9 @@
     } 
     .card-img{
       height: 7rem;
-      width:auto;
+      width: auto;
+      filter: drop-shadow(2px 1px 2px black) brightness(115%);
+      padding: 1.5%;
     }
 
   .text-container {
