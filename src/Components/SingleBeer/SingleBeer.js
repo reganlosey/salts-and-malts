@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom'
+import ReactLoading from 'react-loading';
 import './SingleBeer.scss'
 
 const SingleBeer = () => {
@@ -20,8 +21,15 @@ const SingleBeer = () => {
     fetchSingleBeer(`https://api.punkapi.com/v2/beers${beerId}`)
   }, [])
 
-
-
+  if (!singleData || !foodData || !hopsData) {
+    return (
+      <div className="loading-spinner">
+        <h1>Site is brewing, hang tight!</h1>
+        <ReactLoading type={'spinningBubbles'} color={"orange"} height={'200px'} width={'200px'}/>
+      </div>
+    )
+  }
+  else {
   return (
     <section className="single-beer-container">
       <div className="beer-container">
@@ -49,6 +57,7 @@ const SingleBeer = () => {
       </div>
     </section >
   )
+  }
 
 
 }

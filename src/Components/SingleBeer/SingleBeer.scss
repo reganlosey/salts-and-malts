@@ -1,6 +1,15 @@
+  .single-beer-container {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%
+  }
+
   .beer-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
   }
 
@@ -9,43 +18,44 @@
     margin: 20px;
 
     .name {
-      border-bottom: 2px solid orange;
-      font-size: 3em;
+      border-bottom: 2px solid darkorange;
+      font-size: 2.7rem;
     }
 
     .tagline {
-      font-size: 2em;
+      font-size: 2rem;
       margin: 1% 0;
     }
-
+  }
     .description {
-      font-size: 1.3em;
+      font-size: 1.3rem;
       border-bottom: 2px solid black;
       padding: 1%;
 
     }
 
-  }
 
   .detailed-info {
     margin: 1%;
     padding: 2%;
     font-size: 1.3em;
     border: 5px solid black;
-    background-color: #ffa500c2;
+    background-color: brown;
+    color: blanchedalmond;
     border-radius: 10px;
     height: -moz-fit-content;
     height: fit-content;
-    width: 65%;
+    width: 100%;
     text-align: center;
 
     .details {
-      font-size: .9em;
+      font-size: 0.9em;
       padding: 1%;
       margin: 0 auto;
+      color: black;
       text-align: center;
       border: 3px solid black;
-      background-color: #ffffffc2;
+      background-color: blanchedalmond;
       border-radius: 10px;
       width: -moz-fit-content;
       width: fit-content;
@@ -71,15 +81,21 @@
   }
 
   .image {
-    height: 60vh;
+    height: 55vh;
     width: auto;
-    filter: brightness(115%);
-    margin: 2%;
+    padding: 2%;
+    filter: drop-shadow(3px 2px 3px blanchedalmond) brightness(115%);
   }
 
   @media screen and (max-width: 1000px) {
-    .beer-container {
-      border: 1px solid magenta;
+    .single-beer-container {
+      height: initial;
+    }
+
+    .beer-container{
+      display: flex;
+      justify-content: space-around;
+      padding: initial;
     }
 
     .basic-info {
@@ -87,6 +103,20 @@
     }
 
     .detailed-info {
-      width: 100%;
+      font-size: 1rem;
+    }
+
+    .description{
+      font-size: 1rem;
+    }
+
+    .basic-info{
+      margin: 1%;
+      .name{
+        font-size: 1.7em;
+      }
+      .tagline{
+        font-size: 1rem;
+      }
     }
   }

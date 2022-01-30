@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Header.scss'
+import HomeIcon from '../../assets/home-icon.svg'
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
         <p className="site-tagline">A beer-food pairing app that rises in the yeast and sets in the waist.</p>
       </div>
       <div className="icon-container">
-        <Link to={"/"}><img className="home-icon" src="https://www.svgrepo.com/show/18449/home.svg" alt="home icon" /></Link>
+        <Link to={"/"}><img className="home-icon" src={HomeIcon} alt="home icon" /></Link>
       </div>
     </header>
   )

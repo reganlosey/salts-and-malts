@@ -1,5 +1,5 @@
 .header {
-  color: black;
+  color: blanchedalmond;
   display: flex;
   align-content: stretch;
   flex-direction: row;
@@ -14,25 +14,57 @@
     height: 100%;
     align-items: center;
     flex-wrap: wrap;
-    width: 75%;
+    width: 50%;
+    margin: .5%;
 
+  }
+
+  .site-name {
+    font-size: 3em;
+    color: blanchedalmond;
+    border-bottom: 2px solid orange;
+    margin-left: 10px;
+
+    &:hover {
+      transform: scale(1.05);
+      transition-duration: 200ms;
+      transition-timing-function: ease;
+
+    }
+  }
+
+  .site-tagline {
+    font-size: 1.4rem;
+    padding: 5px;
+  }
+}
+
+.home-icon {
+  height: 3em;
+  width: 3em;
+  margin: 10px;
+  filter: drop-shadow(6px 2px 0px black);
+
+  &:hover {
+    transform: scale(1.05);
+    transition-duration: 200ms;
+  }
+}
+
+
+@media screen and(max-width: 1000px) {
+  .header {
+    font-size: .9rem;
 
     .site-name {
-      font-size: 3em;
-      color: black;
-      border-bottom: 2px solid orange;
-      margin-left: 10px;
+      font-size: 2em;
     }
 
     .site-tagline {
-      font-size: 1.5em;
-      padding: 5px;
+      font-size: 1.3rem;
+
     }
   }
 
-  .home-icon {
-    height: 3em;
-    width: 3em;
-    margin: 10px;
-  }
+
 }

@@ -10,7 +10,6 @@
 }
 
 .button-container {
-  height: 7vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -20,36 +19,28 @@
 }
 
 .sort-btn {
-  background-color: orange;
+  background-color: darkorange;
   border: 1px solid black;
   color: black;
-  font-size: 22px;
-  box-shadow: 1.5px 1px 2px black;
+  font-size: 1.5rem;
+  box-shadow: 1.5px 1px 2px blanchedalmond;
   border-radius: 3px;
   margin: 1% 4%;
   padding: 0.5%;
-}
 
-.sort-btn:hover {
-  cursor: pointer;
-  background-color: transparent;
-  color: black;
-}
+  &:hover {
+    cursor: pointer;
+    background-color: blanchedalmond;
+    color: black;
+    transform: scale(1.05);
+    transition-duration: 200ms;
+  }
 
-.sort-btn:focus {
-  background-color: transparent;
-  color: black;
-}
-
-
-@media screen and (max-width: 738px) {
-  .button-container{
-    height: 7vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 1% 1% 10%;
+  &:focus {
+    background-color: blanchedalmond;
+    color: black;
+    transform: scale(1.05);
+    transition-duration: 200ms;
   }
 }
 
