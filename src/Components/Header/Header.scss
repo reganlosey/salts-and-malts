@@ -15,12 +15,18 @@
     align-items: center;
     flex-wrap: wrap;
     width: 65%;
+    margin: .5%;
 
     .site-name {
       font-size: 2.7em;
       color: blanchedalmond;
       border-bottom: 2px solid orange;
-      margin-left: 10px; 
+      margin-left: 10px;
+
+      &:hover {
+        transform: scale(1.05);
+
+      }
     }
 
     .site-tagline {
@@ -34,7 +40,8 @@
     width: 3em;
     margin: 10px;
     filter: drop-shadow(6px 2px 0px black);
-    &:hover{
+
+    &:hover {
       transform: scale(1.1)
     }
   }
