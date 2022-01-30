@@ -32,8 +32,8 @@
     padding: 2%;
     font-size: 1.3em;
     border: 5px solid black;
-    background-color: #ffa500c2;
-    color: black;
+    background-color: brown;
+    color: blanchedalmond;
     border-radius: 10px;
     height: -moz-fit-content;
     height: fit-content;
@@ -41,12 +41,13 @@
     text-align: center;
 
     .details {
-      font-size: .9em;
+      font-size: 0.9em;
       padding: 1%;
       margin: 0 auto;
+      color: black;
       text-align: center;
       border: 3px solid black;
-      background-color: #ffffffc2;
+      background-color: #ff9346;
       border-radius: 10px;
       width: -moz-fit-content;
       width: fit-content;
@@ -74,8 +75,8 @@
   .image {
     height: 60vh;
     width: auto;
-    filter: brightness(115%);
     margin: 2%;
+    filter: drop-shadow(11px 4px 8px black) brightness(115%);
   }
 
   @media screen and (max-width: 1000px) {
