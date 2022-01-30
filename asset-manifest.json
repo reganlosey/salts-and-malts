@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/salts-and-malts/static/css/main.48facc76.css",
+    "main.css": "/salts-and-malts/static/css/main.89d235a0.css",
     "main.js": "/salts-and-malts/static/js/main.daf55f43.js",
     "static/js/787.c93158ed.chunk.js": "/salts-and-malts/static/js/787.c93158ed.chunk.js",
     "static/media/home-icon.svg": "/salts-and-malts/static/media/home-icon.08406d14cedbec63d6ad065fc036ab75.svg",
     "index.html": "/salts-and-malts/index.html",
-    "main.48facc76.css.map": "/salts-and-malts/static/css/main.48facc76.css.map",
+    "main.89d235a0.css.map": "/salts-and-malts/static/css/main.89d235a0.css.map",
     "main.daf55f43.js.map": "/salts-and-malts/static/js/main.daf55f43.js.map",
     "787.c93158ed.chunk.js.map": "/salts-and-malts/static/js/787.c93158ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48facc76.css",
+    "static/css/main.89d235a0.css",
     "static/js/main.daf55f43.js"
   ]
 }
