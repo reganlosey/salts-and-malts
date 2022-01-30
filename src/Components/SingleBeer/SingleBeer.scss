@@ -1,5 +1,4 @@
   .single-beer-container {
-    border: 1px solid blueviolet;
     height: 85vh;
     display: flex;
     flex-direction: column;
@@ -18,7 +17,7 @@
     margin: 20px;
 
     .name {
-      border-bottom: 2px solid orange;
+      border-bottom: 2px solid darkorange;
       font-size: 3em;
     }
 

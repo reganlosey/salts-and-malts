@@ -24,7 +24,9 @@
       margin-left: 10px;
 
       &:hover {
-        transform: scale(1.05);
+        transform:scale(1.05);
+        transition-duration: 200ms;
+        transition-timing-function: ease;
 
       }
     }
@@ -42,7 +44,8 @@
     filter: drop-shadow(6px 2px 0px black);
 
     &:hover {
-      transform: scale(1.1)
+      transform:scale(1.05);
+      transition-duration: 200ms;
     }
   }
 }

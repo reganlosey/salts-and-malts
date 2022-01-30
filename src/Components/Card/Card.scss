@@ -31,16 +31,24 @@
     cursor: pointer;
     font-size: 21px;
     border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
 
     &:hover {
       cursor: pointer;
       background-color: blanchedalmond;;
       color: black;
+      transform:scale(1.05);
+      transition-duration: 200ms;
     }
 
     &:focus {
       background-color: blanchedalmond;
       color: black;
+      transform:scale(1.05);
+      transition-duration: 200ms;
     }
   }
+
+  
 }

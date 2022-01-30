@@ -19,7 +19,7 @@
 }
 
 .sort-btn {
-  background-color: orange;
+  background-color: darkorange;
   border: 1px solid black;
   color: black;
   font-size: 22px;
@@ -32,13 +32,15 @@
     cursor: pointer;
     background-color: blanchedalmond;
     color: black;
-    transform: scale(1.1)
+    transform:scale(1.05);
+      transition-duration: 200ms;
   }
   
   &:focus {
     background-color: blanchedalmond;
     color: black;
-    transform: scale(1.1)
+    transform:scale(1.05);
+      transition-duration: 200ms;
   }
 }
 
