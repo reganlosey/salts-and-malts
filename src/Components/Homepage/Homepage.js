@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import ReactLoading from 'react-loading';
 import Card from '../Card/Card';
 import './Homepage.scss';
 

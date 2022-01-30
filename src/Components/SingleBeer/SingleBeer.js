@@ -25,7 +25,7 @@ const SingleBeer = () => {
     return (
       <div className="loading-spinner">
         <h1>Site is brewing, hang tight!</h1>
-        <ReactLoading type={'spinningBubbles'} color={"orange"} height={'200px'} width={'200px'}/>
+        <ReactLoading type={'spinningBubbles'} color={"darkorange"} height={'200px'} width={'200px'}/>
       </div>
     )
   }
