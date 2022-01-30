@@ -1,7 +1,7 @@
 .beer-card {
   border: 2px solid black;
   display: flex;
-  height: 255px;
+  height: 285px;
   font-size: 95%;
   align-items: flex-start;
   width: 343px;
@@ -12,24 +12,29 @@
   justify-content: center;
   align-content: center;
   background-color: brown;
-    .card-name {
-      font-size: 1.5em;
-    } 
-    .card-img{
-      height: 7rem;
-      width: auto;
-      filter: drop-shadow(2px 1px 2px black) brightness(115%);
-      padding: 1.5%;
-    }
+
+  .card-name {
+    font-size: 1.5em;
+    margin: 5px;
+  }
+
+  .card-img {
+    height: 7rem;
+    width: auto;
+    filter: drop-shadow(2px 1px 2px black) brightness(115%);
+    padding: 1.5%;
+    margin: 5px;
+  }
 
   .text-container {
-    font-size: 1.2em;
+    font-size: 1.3rem;
     text-align: center;
     height: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 1%;
   }
 
   .about-btn {
@@ -39,22 +44,24 @@
     border-radius: 5px;
     border: 2px solid black;
     box-shadow: 3px 3px black;
+    margin:10px;
 
     &:hover {
       cursor: pointer;
-      background-color: blanchedalmond;;
+      background-color: blanchedalmond;
+      ;
       color: black;
-      transform:scale(1.05);
+      transform: scale(1.05);
       transition-duration: 200ms;
     }
 
     &:focus {
       background-color: blanchedalmond;
       color: black;
-      transform:scale(1.05);
+      transform: scale(1.05);
       transition-duration: 200ms;
     }
   }
 
-  
+
 }
